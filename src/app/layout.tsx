@@ -21,7 +21,7 @@ export default function RootLayout({
           <MobileHeader />
           <div className="flex flex-1 h-full gap-2">
             <Aside />
-            <div className="relative grid h-full flex-1 bg-neutral p-4 md:p-6 border border-border rounded-lg scroll-container overflow-auto">
+            <div className="relative grid h-full flex-1 bg-neutral p-4 lg:p-6 border border-border rounded-lg scroll-container overflow-auto">
               {children}
             </div>
           </div>

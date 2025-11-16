@@ -8,9 +8,9 @@ import {
 
 export default function Home() {
   return (
-    <div className="w-full max-w-5xl mx-auto md:px-6 py-12 lg:py-16 space-y-12">
+    <div className="w-full max-w-5xl mx-auto lg:px-6 py-12 lg:py-16 space-y-12">
       {/* Hero Section */}
-      <section className="text-center space-y-4 px-2 md:px-0">
+      <section className="text-center space-y-4 px-2 lg:px-0">
         <Heading level="h1" align="center">
           🧩 My Design Components
         </Heading>

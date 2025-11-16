@@ -131,7 +131,7 @@ export function ParagraphTruncating() {
 
   return (
     <div className="flex flex-col gap-4 p-5">
-      <Paragraph className="truncate">{longText}</Paragraph>
+      <Paragraph className="line-clamp-1">{longText}</Paragraph>
       <Paragraph className="line-clamp-2">{longText}</Paragraph>
       <Paragraph className="line-clamp-3">{longText}</Paragraph>
       <Paragraph className="line-clamp-4">{longText}</Paragraph>

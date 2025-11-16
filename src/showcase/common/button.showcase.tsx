@@ -12,11 +12,8 @@ import {
   Star1,
   User,
 } from "iconsax-reactjs";
-import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-
-console.log("Main Button showcase");
 
 const variants: VariantProps<typeof buttonVariants>["variant"][] = [
   "solid",
@@ -38,7 +35,6 @@ const colors: VariantProps<typeof buttonVariants>["color"][] = [
 
 // variants
 export function ButtonVariants() {
-  console.log("variants");
   return (
     <div className="w-full flex flex-wrap gap-5 p-5 items-center">
       <Button variant={`solid`}>Solid</Button>
@@ -50,9 +46,7 @@ export function ButtonVariants() {
   );
 }
 
-// colors
 export function ButtonColors() {
-  console.log("colors");
   const [variant, setVariant] = useState<string>("solid");
 
   return (
@@ -87,7 +81,7 @@ export function ButtonColors() {
 }
 
 // sizes
-export function ButtonDefaultSizes() {
+export function ButtonSizes() {
   return (
     <div className="w-full flex flex-wrap gap-5 p-5 items-center">
       <Button size={`xs`}>Extra small</Button>
@@ -143,6 +137,7 @@ export function ButtonIconText() {
       setLoading(false);
     }, 3000);
   };
+
   return (
     <div className="w-full flex flex-wrap gap-5 p-5 items-center">
       <Button variant={`flat`}>

@@ -9,11 +9,11 @@ export default function MobileHeader() {
     useSidebarStore();
 
   return (
-    <div className="sticky top-2 md:hidden flex items-center justify-between p-4 bg-neutral border border-border rounded-lg mb-2 z-50">
+    <div className="sticky top-2 lg:hidden flex items-center justify-between p-4 bg-neutral border border-border rounded-lg mb-2 z-50">
       <Brand />
       <button
         onClick={toggleDesktop}
-        className="hidden md:flex p-2 rounded-lg hover:bg-foreground/5 transition-colors"
+        className="hidden lg:flex p-2 rounded-lg hover:bg-foreground/5 transition-colors"
         aria-label="Toggle menu"
       >
         {isDesktopOpen ? (
@@ -24,7 +24,7 @@ export default function MobileHeader() {
       </button>
       <button
         onClick={toggleMobile}
-        className="md:hidden p-2 rounded-lg hover:bg-foreground/5 transition-colors"
+        className="lg:hidden p-2 rounded-lg hover:bg-foreground/5 transition-colors"
         aria-label="Toggle menu"
       >
         {isMobileOpen ? (

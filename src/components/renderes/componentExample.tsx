@@ -14,7 +14,7 @@ export default function ComponentExample({ config }: Props) {
         <Heading level={`h2`}>{config.title}</Heading>
         <Paragraph>{config.description}</Paragraph>
       </div>
-      <div className="flex flex-col space-y-6 md:space-y-12">
+      <div className="flex flex-col space-y-6 lg:space-y-12">
         {config.blocks.map((block, i) => (
           <ComponentExampleBlock key={i} config={block} />
         ))}

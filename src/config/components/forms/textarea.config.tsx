@@ -10,7 +10,7 @@ import {
   TextareaControlled,
   TextareaCharacterLimit,
   TextareaWithForm,
-} from "@/showcase/forms/textarea.showace";
+} from "@/showcase/forms/textarea.showcase";
 
 type ComponentVariants = VariantProps<typeof textareaVariants>;
 

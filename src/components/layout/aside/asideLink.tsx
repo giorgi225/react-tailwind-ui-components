@@ -88,7 +88,7 @@ export default function AsideLink({
         aria-expanded={hasChildren ? isOpen : undefined}
         className={cn(
           "group",
-          "flex flex-1 items-center gap-3 px-3 md:px-4 py-2 md:py-3 rounded-sm text-foreground bg-transparent", // Added responsive padding
+          "flex flex-1 items-center gap-3 px-3 lg:px-4 py-2 lg:py-3 rounded-sm text-foreground bg-transparent", // Added responsive padding
           "transition-all",
           isOpen && level === 0 && "bg-foreground/5",
           isActive

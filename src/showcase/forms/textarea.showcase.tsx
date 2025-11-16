@@ -1,6 +1,5 @@
 "use client";
 import { Button } from "@/components/ui/common/button";
-import { Strong } from "@/components/ui/common/typography";
 import {
   Form,
   FormControl,
@@ -12,9 +11,8 @@ import {
 import { Input } from "@/components/ui/forms/input";
 import { Textarea } from "@/components/ui/forms/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { EyeSlash, SearchNormal1 } from "iconsax-reactjs";
-import { EyeIcon, X } from "lucide-react";
-import numeral from "numeral";
+import { SearchNormal1 } from "iconsax-reactjs";
+import { X } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import z from "zod";

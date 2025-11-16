@@ -24,7 +24,7 @@ export default function Aside({ className, ...props }: Props) {
       {/* Mobile Overlay */}
       {isMobileOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
           onClick={closeMobile}
         />
       )}
@@ -32,19 +32,19 @@ export default function Aside({ className, ...props }: Props) {
       {/* Sidebar Container */}
       <aside
         className={cn(
-          "flex flex-col w-full max-w-[260px] md:bg-transparent bg-neutral rounded-lg",
-          "fixed md:relative z-50 md:z-auto",
+          "flex flex-col w-full max-w-[260px] lg:bg-transparent bg-neutral rounded-lg",
+          "fixed lg:relative z-50 lg:z-auto",
           "transition-all duration-300 ease-in-out",
-          "h-[90svh] md:h-auto",
-          isMobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
-          !isDesktopOpen && "md:max-w-0 md:opacity-0 md:overflow-hidden",
+          "h-[90svh] lg:h-auto",
+          isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
+          !isDesktopOpen && "lg:max-w-0 lg:opacity-0 lg:overflow-hidden",
           className
         )}
         aria-label="Sidebar Navigation"
         {...props}
       >
         {/* Desktop Brand - hidden on mobile since we have mobile header */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Brand linkClassName="w-full p-4" />
         </div>
 

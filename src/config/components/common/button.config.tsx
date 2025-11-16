@@ -4,7 +4,7 @@ import { VariantProps } from "class-variance-authority";
 import {
   ButtonColors,
   ButtonComposition,
-  ButtonDefaultSizes,
+  ButtonSizes,
   ButtonDisabled,
   ButtonIconOnly,
   ButtonIconSizes,
@@ -76,9 +76,9 @@ export const buttonConfig: ComponentShowcaseType = {
           title: "Default Sizes",
           description:
             "Buttons with text only, ideal for most actions in your UI. Sizes scale from extra small to large.",
-          Preview: <ButtonDefaultSizes />,
+          Preview: <ButtonSizes />,
           codePath: "/common/button.showcase.tsx",
-          componentName: "ButtonDefaultSizes",
+          componentName: "ButtonSizes",
         },
         {
           title: "Icon Sizes",
@@ -134,7 +134,7 @@ export const buttonConfig: ComponentShowcaseType = {
           description: "Shows buttons that are disabled and not clickable.",
           Preview: <ButtonDisabled />,
           codePath: "/common/button.showcase.tsx",
-          componentName: "ButtonVariants",
+          componentName: "ButtonDisabled",
         },
         {
           title: "Loading State",
@@ -142,7 +142,7 @@ export const buttonConfig: ComponentShowcaseType = {
             "Displays buttons with a loading indicator to show ongoing processes.",
           Preview: <ButtonLoading />,
           codePath: "/common/button.showcase.tsx",
-          componentName: "ButtonIcon",
+          componentName: "ButtonLoading",
         },
       ],
     },

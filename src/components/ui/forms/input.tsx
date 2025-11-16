@@ -107,9 +107,13 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       const rawValue = e.target.value;
 
       if (type === "amount") {
-        // Remove non-numeric except dot and comma
         const numeric = rawValue.replace(/[^0-9.,]/g, "");
-        const numericClean = numeric.replace(/,/g, ""); // numeric as plain number
+        let numericClean = numeric.replace(/,/g, "");
+
+        // Remove leading zeros → "01" becomes "1"
+        if (numericClean !== "") {
+          numericClean = String(Number(numericClean));
+        }
 
         if (!isControlled) setInternalValue(numericClean);
 

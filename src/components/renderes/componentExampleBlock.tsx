@@ -68,7 +68,7 @@ export default function ComponentExampleBlock({ config }: Props) {
         </div>
 
         {showCode && (
-          <div className="bg-background border-t border-border">
+          <div className="grid bg-background border-t border-border">
             <SyntaxHighlighter
               language="tsx"
               style={oneDark}

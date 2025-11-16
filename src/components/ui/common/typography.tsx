@@ -56,7 +56,7 @@ export const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
 Heading.displayName = "Heading";
 
 /* ------------------- Paragraph ------------------- */
-export const paragraphVariants = cva("text-sm text-foreground", {
+export const paragraphVariants = cva("whitespace-normal text-sm text-foreground", {
   variants: {
     weight: {
       light: "font-light",
@@ -73,7 +73,7 @@ export const paragraphVariants = cva("text-sm text-foreground", {
       danger: "text-danger",
       success: "text-success",
       warning: "text-warning",
-      lead: "text-lg sm:text-xl md:text-2xl font-light text-muted-foreground",
+      lead: "text-lg sm:text-xl lg:text-2xl font-light text-muted-foreground",
       quote: "border-l-4 border-muted-foreground/30 pl-4 italic",
       code: "w-max bg-muted px-2 py-1 rounded text-sm",
     },

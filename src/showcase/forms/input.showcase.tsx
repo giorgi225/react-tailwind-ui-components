@@ -201,7 +201,7 @@ export function InputAmount() {
       </div>
 
       <p className="truncate text-sm text-muted-foreground mt-1">
-        Current value: {value ? Number(value).toLocaleString() : "—"}
+        Current value: {value ?? "—"}
       </p>
     </div>
   );
