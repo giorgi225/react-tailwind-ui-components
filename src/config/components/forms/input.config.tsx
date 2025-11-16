@@ -1,17 +1,6 @@
 import { ComponentShowcaseType } from "../base.config";
 import { VariantProps } from "class-variance-authority";
-import {
-  ButtonColors,
-  ButtonComposition,
-  ButtonDefaultSizes,
-  ButtonDisabled,
-  ButtonIconOnly,
-  ButtonIconSizes,
-  ButtonIconText,
-  ButtonLoading,
-  ButtonShapes,
-  ButtonVariants,
-} from "@/showcase/common/button.showcase";
+
 import { inputVariants } from "@/components/ui/forms/input";
 import {
   InputAffixes,
